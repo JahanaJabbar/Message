@@ -17,7 +17,7 @@ h2{
   text-align: center;
 }
 p{
-    position: relative;
+    position: absolute;
   top: 1200px;
   left: 360px;
   font-size: 45px;
