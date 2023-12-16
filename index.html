@@ -19,6 +19,8 @@
     #botao1, #botao2 {
       display: block;
       margin: 10px auto;
+      position: relative;
+      left: 0; /* Initial position */
     }
     @media only screen and (max-width: 600px) {
       p {
@@ -34,15 +36,15 @@
   <button id="botao2">NO</button>
   <script>
     const button2 = document.getElementById('botao2');
-    let left = 40;
-    button2.addEventListener('touchstart', function() {
-      left = (left === 40) ? 44 : 40;
+    let left = 0;
+    button2.addEventListener('click', function() {
+      left = (left === 0) ? 50 : 0;
       this.style.left = left + '%';
     });
   </script>
   <script>
     document.getElementById('botao1').addEventListener('click', function() {
-      alert('I miss you too😍❤️');
+      alert('I miss you too 😍❤️');
     });
   </script>
 </body>
