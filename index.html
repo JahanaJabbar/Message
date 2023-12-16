@@ -16,11 +16,7 @@
       max-width: 100%;
       height: auto;
     }
-    #botao1 {
-      display: block;
-      margin: 10px auto;
-    }
-    #botao2 {
+    #botao1, #botao2 {
       display: block;
       margin: 10px auto;
     }
@@ -39,18 +35,14 @@
   <script>
     const button2 = document.getElementById('botao2');
     let left = 40;
-    button2.addEventListener('mouseover', function() {
-      if (left == 40) {
-        left = 44;
-      } else {
-        left = 40;
-      }
+    button2.addEventListener('touchstart', function() {
+      left = (left === 40) ? 44 : 40;
       this.style.left = left + '%';
     });
   </script>
   <script>
     document.getElementById('botao1').addEventListener('click', function() {
-      alert('I miss you too  😍❤️');
+      alert('I miss you too😍❤️');
     });
   </script>
 </body>
